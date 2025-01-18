@@ -26,6 +26,10 @@ function sumTheNumbers() {
     // using a for loop. Check the expected output
     // on the assignment page
 
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+            sumTheNumbersElement.innerText= sum;
+        }
 }
 
 function createNumberArray() {
@@ -34,12 +38,17 @@ function createNumberArray() {
     // Write the logic that loops 10 times and adds the value
     // to numberArray each iteration. Check the expected output
     // on the assignment page
-
+    for (var i = 1; i <= 10; i++) {
+        numberArray.push(i);
+        createNumberArrayElement.innerText= numberArray;
+    }
 }
 
 function render() {
     // Call the created functions
     evenOrOdd();
+    sumTheNumbers();
+    createNumberArray();
 }
 
 submissionBtn.addEventListener("click", function () {
